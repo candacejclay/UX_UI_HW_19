@@ -1,0 +1,249 @@
+/* TYPOGRAPHY WITH NO CLASS */
+h1 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 6em;
+    font-weight: 800;
+    color: #f9f5f0;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+h3 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    color: #ee839c;
+    text-align: center;
+    letter-spacing: 10px;
+    padding-top: 30px;
+}
+
+/* HEADER CONTENT */
+header {
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 25%;
+    padding-left: 30px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.3em;
+    font-weight: 800;
+    color: #ee839c;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav {
+    width: 65%;
+    float: right;
+    align-items: center;
+}
+
+ul {
+    float: right;
+}
+
+li {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #ee839c;
+    font-weight: 500;
+}
+
+/* HERO CONTENT*/
+.hero-content {
+   background-image: url("https://img.freepik.com/free-vector/background-seamless-pattern-vector-with-cute-memphis_53876-105506.jpg?t=st=1657295423~exp=1657296023~hmac=4cba08f57181a32c0f1561bbb3d47777c84d1052b8a80cfe139751acaecdcd03&w=1380");
+   background-size: cover;
+   height: 700px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 12px 12px 30px rgba(99, 99, 99, 0.692);
+}
+
+.hero-title {
+    width: 50%;
+    background-color: #bdd5e9;
+    padding: 100px;
+    opacity: 85%;
+    border-radius: 70px;
+    border: 4px black;
+    line-height: 0px;
+}
+
+.hero-title p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.3em;
+    font-weight: 300;
+    color: #ee839c;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*PROJECTS CONTENT */
+.workGrid {
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    border: 2px black;
+    place-items: center;
+    grid-gap: 50px;
+}
+
+.projects-header {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.3em;
+    font-weight: 900;
+    color: #afd1ec;
+}
+
+.projects-description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.projects-image-container img {
+    border-radius: 70px;
+}
+
+/* SKILLS CONTENT */
+.flexContainer {
+    display: flex;
+}
+
+.skill-container {
+    width: 33%;
+    background-color: #afd1ec;
+    text-align: center;
+    margin: 50px;
+    border-radius: 70px;
+    padding-bottom: 15px;
+}
+
+.skills-header {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.9em;
+    font-weight: 500;
+    color: #f9f5f0;
+    letter-spacing: 10px;
+    padding: 15px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.skill-container p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5em;
+    font-weight: 200;
+    line-height: 50px;
+    color: #f9f5f0;
+}
+/* FOOTER CONTENT*/
+.footer-content {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.footer-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8em;
+    font-weight: 300;
+    text-align: center;
+    color: #ee839c;
+    font-weight: 600;
+}
+
+.social-icons img {
+    width: 40px;
+}
+
+.copyright {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #ee839c;
+    text-align: center;
+}
+
+/* RESUME BUTTON*/
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resume-button {
+  background-color: transparent;
+  border: 1px solid #c7a1c8;
+  box-sizing: border-box;
+  color: #ee839c;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-align: center;
+}
+
+.resume-button:hover,
+.resume-button:active {
+  outline: 0;
+}
+
+.resume-button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.resume-button:before {
+  background-color: white;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.resume-button:hover:before {
+  background-color: #f3d1e2;
+}
+
+@media (min-width: 768px) {
+  .resume-button {
+    padding: 16px 32px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+        .flexContainer {
+          flex-direction: column;
+        }
+
+        .skill-container {
+            flex-direction:column;
+            width: 100%;
+        }
+
+        .workGrid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+  }
