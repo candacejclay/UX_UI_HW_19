@@ -96,7 +96,8 @@ h2 {
 }
 
 .hero-image img {
-  float: left;
+  max-width: 120%;
+  height: auto;
 }
 
 .button {
@@ -188,5 +189,6 @@ h2 {
 @media (min-width: 768px) {
   .resume-button {
     padding: 16px 32px;
+    height: auto;
   }
 }
